@@ -1,0 +1,60 @@
+.slide_1{
+  margin-top: 10px;
+  height: 559px;
+  background: url('./img/image.png')center / cover no-repeat;
+  &__text{
+    img{
+      margin: 0 0 -72px 35px;
+      width: 346px;
+      height: 69px;
+    }
+    h1{
+      color: var(--Black, #000);
+      font-family: Oswald,sans-serif;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 96px;
+    }
+    span{
+      color: transparent;
+      -webkit-text-stroke: 2px black;
+    }
+    button{
+      margin-top: 33px;
+      border: 2px solid #000;
+      width: 122px;
+      height: 40px;
+      flex-shrink: 0;
+      background: rgba(0, 0, 0, 0);
+      color: #000;
+      text-align: center;
+
+      /* Oswald Medium 18 AA */
+      font-family: Oswald,sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+  &__img1{
+    margin: 0 -70px 0 84px ;
+    width: 290px;
+    height: 435px;
+  }
+  &__img2{
+    width: 331px;
+    height: 495px;
+  }
+}

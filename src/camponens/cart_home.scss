@@ -1,0 +1,36 @@
+.cart_home{
+  width: 240px;
+  height: 395px;
+  img{
+    margin-bottom: 11px;
+    width: 240px;
+    height: 314px;
+  }
+  p{
+    color: var(--Gray-4, #BDBDBD);
+    font-family: Oswald,sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  h3{
+    color: #000;
+    font-family: Oswald,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  h2{
+    margin-top: 15px;
+    color: var(--Black, #000);
+    font-family: Oswald,sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}

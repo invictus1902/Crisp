@@ -1,0 +1,203 @@
+.footer {
+  padding-top: 20px;
+  background: black;
+  height: 369px;
+
+  &__center {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+
+  &__features,
+  &__menu {
+    h2 {
+      margin-bottom: 20px;
+      color: #FFF;
+      font-family: Oswald, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: var(--Gray-1, #828282);
+      font-family: Roboto-Flex, sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px; /* 207.692% */
+      text-transform: uppercase;
+    }
+  }
+
+  &__logo {
+    img {
+      width: 65px;
+      height: 30px;
+    }
+  }
+
+  &__contact {
+    h2 {
+      margin-bottom: 20px;
+      color: #FFF;
+      font-family: Oswald, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      color: var(--White, #FFF);
+      font-family: Oswald, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 10px;
+      color: var(--Gray-1, #828282);
+      font-family: Roboto-Flex, sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px; /* 207.692% */
+      text-transform: uppercase;
+    }
+  }
+
+  &__follow_us {
+    h2 {
+      margin-bottom: 20px;
+      color: #FFF;
+      font-family: Oswald, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  &__facebook,
+  &__twitter,
+  &__instagram {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 15px;
+      width: 21px;
+      height: 21px;
+      flex-shrink: 0;
+    }
+
+    h3 {
+      color: var(--Gray-1, #828282);
+      font-family: Roboto-Flex, sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 46px; /* 353.846% */
+      text-transform: uppercase;
+    }
+  }
+
+  &__login_us {
+    h2 {
+      margin-bottom: 20px;
+      color: #FFF;
+      font-family: Oswald, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 5px;
+      color: var(--Gray-1, #828282);
+      font-family: Roboto-Flex, sans-serif;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px; /* 207.692% */
+      text-transform: uppercase;
+    }
+
+    input {
+      padding-left: 10px;
+      margin-bottom: 6px;
+      border: 1px solid #FFF;
+      background: #000;
+      width: 280px;
+      height: 40px;
+      flex-shrink: 0;
+      color: var(--White, #FFF);
+      font-family: Roboto, sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 166.667% */
+    }
+
+    button {
+      color: var(--Black-2, #3F3F3F);
+      text-align: center;
+      font-family: Oswald, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      display: flex;
+      width: 280px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+    }
+  }
+
+  &__line {
+    background: #4F4F4F;
+    height: 1px;
+    margin: 30px 0 10px 0;
+  }
+
+  &__bottom {
+    h4 {
+      color: var(--White, #FFF);
+      font-family: Roboto, sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.section_top {
+  background: var(--Main-Color, #E6F1FA);
+
+  ul {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      display: flex;
+      align-items: center;
+      color: #000;
+      font-family: Oswald, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
