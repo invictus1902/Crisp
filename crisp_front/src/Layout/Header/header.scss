@@ -1,0 +1,116 @@
+.header {
+  background: black;
+  color: white;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+
+  &__logo {
+    img {
+      width: 65px;
+      height: 30px;
+    }
+  }
+
+  &__nav {
+    height: 20px;
+    ul {
+      column-gap: 19px;
+      display: flex;
+
+      li {
+        text-align: center;
+        color: #FFF;
+        font-family: Oswald, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      a{
+        text-align: center;
+        color: #FFF;
+        font-family: Oswald, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+
+      p {
+        display: flex;
+        color: #FFF;
+        font-family: Oswald, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        img{
+          margin-right: 6px;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+  &__panelProfile {
+    display: flex;
+    align-items: center;
+    column-gap: 21px;
+  }
+
+  &__balancePanel {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  &__loginAndRegistrPanel {
+    display: flex;
+    column-gap: 9px;
+    height: 20px;
+    p {
+      color: #FFF;
+      font-family: Oswald, sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  &__balansLeft {
+    display: flex;
+    column-gap: 17px;
+  }
+
+  &__rightTop {
+    color: #FFF;
+    font-family: Roboto Flex, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+  }
+
+  &__rightBottom {
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14px;
+  }
+}
+
+.active {
+  margin-top: 4px;
+  height: 2px;
+  flex-shrink: 0;
+  background: var(--Main-Color-2, #EB5757);
+}
