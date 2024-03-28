@@ -7,6 +7,7 @@ import Shop from "./pages/shop/shop";
 import Register from "./pages/register/register";
 import Login from "./pages/login/login";
 import Dashboard from "./pages/account_information/dashboard/dashboard";
+import Single from "./pages/single/single";
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
                 <Route path={'/'} element={<Layout/>}>
                     <Route path={''} element={<Home/>}/>
                     <Route path={'/shop'} element={<Shop/>}/>
+                    <Route path={'single/:id'} element={<Single/>}/>
                     <Route path={'/register'} element={<Register/>}/>
                     <Route path={'/login'} element={<Login/>}/>
                     <Route path={'/dashboard'} element={<Dashboard/>}/>

@@ -3,8 +3,8 @@
     {
       "id": 1,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "STATE",
+      "price": 25,
       "category": "TOP women",
       "color": [
         "red","#37647b","#645e5c"
@@ -12,13 +12,18 @@
       "img": [
         "utilse/red.png","utilse/red_wumen2.png","utilse/red_wumen1.png"
       ],
-      "size": "S"
+      "size": "S",
+      "quantity": 1,
+      "quantity_max": 11,
+      "size_all": [
+        "S","4XL","M"
+      ]
     },
     {
       "id": 21,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "COOPER",
+      "price": 50,
       "category": "TOP women",
       "color": [
         "black","blue","red"
@@ -26,13 +31,18 @@
       "img": [
         "utilse/1p.jpg","utilse/2p.jpg","utilse/3p.jpg"
       ],
-      "size": "S"
+      "size": "S",
+      "quantity": 1,
+      "quantity_max": 12,
+      "size_all": [
+        "S","4XL","l"
+      ]
     },
     {
       "id": 22,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "BARDOT",
+      "price": 75,
       "category": "TOP women",
       "color": [
         "#1b181c","#2d1209","#071d35"
@@ -40,13 +50,18 @@
       "img": [
         "utilse/pl1.webp","utilse/pl2.webp","utilse/pl3.webp"
       ],
-      "size": "S"
+      "size": "S",
+      "quantity": 1,
+      "quantity_max": 13,
+      "size_all": [
+        "S","l","XL"
+      ]
     },
     {
       "id": 23,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "ALFANI",
+      "price": 100,
       "category": "TOP women",
       "color": [
         "rgb(188 51 91)","rgb(100 64 141)","rgb(116 77 38)"
@@ -54,13 +69,18 @@
       "img": [
         "utilse/i6q1.jpg","utilse/i6q2.jpg","utilse/i6q3.jpg"
       ],
-      "size": "S"
+      "size": "S",
+      "quantity": 1,
+      "quantity_max": 14,
+      "size_all": [
+        "S","XXS","M"
+      ]
     },
     {
       "id": 24,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "CECE",
+      "price": 125,
       "category": "TOP women",
       "color": [
         "rgb(30 48 48)","rgb(0 31 44)","rgb(38 38 72)"
@@ -68,13 +88,18 @@
       "img": [
         "utilse/Wi1.png","utilse/Wi2.png","utilse/Wi3.png"
       ],
-      "size": "S"
+      "size": "S",
+      "quantity": 1,
+      "quantity_max": 15,
+      "size_all": [
+        "M","XL","S"
+      ]
     },
     {
       "id": 25,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "DONNA RICCO",
+      "price": 150,
       "category": "TOP women",
       "color": [
         "rgb(0 78 107)","rgb(110 80 48)","rgb(75 63 45)"
@@ -82,13 +107,18 @@
       "img": [
         "utilse/lwq1.jpg","utilse/lwq2.jpg","utilse/lwq3.jpg"
       ],
-      "size": "S"
+      "size": "S",
+      "quantity": 1,
+      "quantity_max": 16,
+      "size_all": [
+        "XS","XL","2XL"
+      ]
     },
     {
       "id": 26,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "STATE",
+      "price": 175,
       "category": "TOP women",
       "color": [
         "rgb(59 141 207)","#b8622a","#729519"
@@ -96,13 +126,18 @@
       "img": [
         "utilse/Rec1.png","utilse/Rec2.png","utilse/Rec3.png"
       ],
-      "size": "S"
+      "size": "S",
+      "quantity": 1,
+      "quantity_max": 17,
+      "size_all": [
+        "X","XL","1XL"
+      ]
     },
     {
       "id": 27,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "COOPER",
+      "price": 200,
       "category": "TOP women",
       "color": [
         "rgb(243 221 172)","rgb(225 224 222)"
@@ -110,13 +145,18 @@
       "img": [
         "utilse/ect1.png","utilse/ect2.png"
       ],
-      "size": "S"
+      "size": "S",
+      "quantity": 1,
+      "quantity_max": 18,
+      "size_all": [
+        "3XL","1XL","2XL"
+      ]
     },
     {
       "id": 28,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "BARDOT",
+      "price": 225,
       "category": "TOP women",
       "color": [
         "rgb(41 45 57)","rgb(58 33 19)","rgb(19 38 120)"
@@ -124,13 +164,18 @@
       "img": [
         "utilse/cta1.png","utilse/cta2.png","utilse/cta3.png"
       ],
-      "size": "S"
+      "size": "4XL",
+      "quantity": 1,
+      "quantity_max": 19,
+      "size_all": [
+        "M/L","4XL","3XL"
+      ]
     },
     {
       "id": 29,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "ALFANI",
+      "price": 250,
       "category": "TOP women",
       "color": [
         "rgb(34 41 54)","rgb(44 23 14)","rgb(12 34 101)"
@@ -138,13 +183,18 @@
       "img": [
         "utilse/tan1.png","utilse/tan2.png","utilse/tan3.png"
       ],
-      "size": "S"
+      "size": "3XL",
+      "quantity": 1,
+      "quantity_max": 20,
+      "size_all": [
+        "M/L","2XL","1XL"
+      ]
     },
     {
       "id": 30,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "CECE",
+      "price": 275,
       "category": "TOP women",
       "color": [
         "rgb(34 129 183)","rgb(87 80 62)","rgb(211 202 52)"
@@ -152,13 +202,18 @@
       "img": [
         "utilse/ang1.png","utilse/ang2.png","utilse/ang3.png"
       ],
-      "size": "S"
+      "size": "2XL",
+      "quantity": 1,
+      "quantity_max": 21,
+      "size_all": [
+        "M/L","3XL","1XL"
+      ]
     },
     {
       "id": 31,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "DONNA RICCO",
+      "price": 300,
       "category": "TOP women",
       "color": [
         "rgb(14 13 18)","rgb(15 14 9)","rgb(0 14 43)"
@@ -166,13 +221,18 @@
       "img": [
         "utilse/des1.webp","utilse/des2.webp","utilse/des3.webp"
       ],
-      "size": "S"
+      "size": "1XL",
+      "quantity": 1,
+      "quantity_max": 22,
+      "size_all": [
+        "M","XXS","3XL"
+      ]
     },
     {
       "id": 32,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "STATE",
+      "price": 325,
       "category": "TOP women",
       "color": [
         "rgb(79 46 26)","rgb(52 50 73)","rgb(60 53 35)"
@@ -180,13 +240,18 @@
       "img": [
         "utilse/moc1.jpg","utilse/moc2.jpg","utilse/moc3.jpg"
       ],
-      "size": "S"
+      "size": "XL",
+      "quantity": 1,
+      "quantity_max": 23,
+      "size_all": [
+        "M","XS","1XL"
+      ]
     },
     {
       "id": 33,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "COOPER",
+      "price": 350,
       "category": "TOP women",
       "color": [
         "rgb(46 87 91)","rgb(72 46 37)","rgb(224 44 43)"
@@ -194,13 +259,18 @@
       "img": [
         "utilse/cred1.jpg","utilse/cred2.jpg","utilse/cred3.jpg"
       ],
-      "size": "S"
+      "size": "L",
+      "quantity": 1,
+      "quantity_max": 24,
+      "size_all": [
+        "M","S","1XL"
+      ]
     },
     {
       "id": 34,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "BARDOT",
+      "price": 375,
       "category": "TOP women",
       "color": [
         "rgb(66 46 41)","rgb(31 49 149)","rgb(78 44 32)"
@@ -208,13 +278,18 @@
       "img": [
         "utilse/pal1.jpg","utilse/pal2.jpg","utilse/pal3.jpg"
       ],
-      "size": "S"
+      "size": "M/l",
+      "quantity": 1,
+      "quantity_max": 25,
+      "size_all": [
+        "S","XXS","3XL"
+      ]
     },
     {
       "id": 35,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "ALFANI",
+      "price": 400,
       "category": "TOP women",
       "color": [
         "rgb(213 143 84)","rgb(70 73 44)","rgb(12 17 35)"
@@ -222,13 +297,18 @@
       "img": [
         "utilse/palto1.jpg","utilse/palto2.jpg","utilse/palto3.jpg"
       ],
-      "size": "S"
+      "size": "M",
+      "quantity": 1,
+      "quantity_max": 26,
+      "size_all": [
+        "M","XXS","4XL"
+      ]
     },
     {
       "id": 36,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "CECE",
+      "price": 425,
       "category": "TOP women",
       "color": [
         "rgb(36 39 34)","rgb(16 36 75)","rgb(56 29 17)"
@@ -236,13 +316,18 @@
       "img": [
         "utilse/efm1.jpg","utilse/efm2.jpg","utilse/efm3.jpg"
       ],
-      "size": "S"
+      "size": "S/M",
+      "quantity": 1,
+      "quantity_max": 27,
+      "size_all": [
+        "L","XS","3XL"
+      ]
     },
     {
       "id": 37,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "DONNA RICCO",
+      "price": 450,
       "category": "TOP women",
       "color": [
         "rgb(37 49 84)","rgb(50 48 48)","rgb(62 45 24)"
@@ -250,13 +335,18 @@
       "img": [
         "utilse/lem1.jpg","utilse/lem2.jpg","utilse/lem3.jpg"
       ],
-      "size": "S"
+      "size": "S",
+      "quantity": 1,
+      "quantity_max": 28,
+      "size_all": [
+        "M","S","L"
+      ]
     },
     {
       "id": 38,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "STATE",
+      "price": 475,
       "category": "TOP women",
       "color": [
         "rgb(162 155 213)","rgb(177 138 120)","rgb(78 105 123)"
@@ -264,13 +354,18 @@
       "img": [
         "utilse/lse1.jpg","utilse/lse2.jpg","utilse/lse3.jpg"
       ],
-      "size": "S"
+      "size": "XS",
+      "quantity": 1,
+      "quantity_max": 29,
+      "size_all": [
+        "1XL","2XL","3XL"
+      ]
     },
     {
       "id": 39,
       "title": "Angels malu zip jeans slim black used",
-      "brand": "",
-      "price": "200",
+      "brand": "COOPER",
+      "price": 500,
       "category": "TOP women",
       "color": [
         "rgb(88 128 147)","rgb(99 92 96)","rgb(158 128 56)"
@@ -278,7 +373,12 @@
       "img": [
         "utilse/pre1.jpg","utilse/pre2.jpg","utilse/pre3.jpg"
       ],
-      "size": "S"
+      "size": "XXS",
+      "quantity": 1,
+      "quantity_max": 30,
+      "size_all": [
+        "2XL","3XL","4XL"
+      ]
     }
   ],
   "product_color": [
@@ -297,6 +397,78 @@
     {
       "id": 43,
       "color": "black"
+    },
+    {
+      "id": 44,
+      "color": "rgb(50 48 48)"
+    },
+    {
+      "id": 45,
+      "color": "rgb(36 39 34)"
+    },
+    {
+      "id": 46,
+      "color": "rgb(12 17 35)"
+    },
+    {
+      "id": 47,
+      "color": "rgb(66 46 41)"
+    },
+    {
+      "id": 48,
+      "color": "rgb(31 49 149)"
+    },
+    {
+      "id": 49,
+      "color": "rgb(72 46 37)"
+    },
+    {
+      "id": 50,
+      "color": "rgb(60 53 35)"
+    },
+    {
+      "id": 51,
+      "color": "rgb(0 14 43)"
+    },
+    {
+      "id": 52,
+      "color": "rgb(211 202 52)"
+    },
+    {
+      "id": 53,
+      "color": "rgb(34 41 54)"
+    },
+    {
+      "id": 54,
+      "color": "rgb(243 221 172)"
+    },
+    {
+      "id": 55,
+      "color": "#b8622a"
+    },
+    {
+      "id": 56,
+      "color": "rgb(75 63 45)"
+    },
+    {
+      "id": 57,
+      "color": "rgb(38 38 72)"
+    },
+    {
+      "id": 58,
+      "color": "rgb(188 51 91)"
+    },
+    {
+      "id": 59,
+      "color": "#071d35"
+    },
+    {
+      "id": 60,
+      "color": "blue"
+    },
+    {
+      "id": 61,
+      "color": "#37647b"
     }
   ],
   "product_size": [
@@ -352,27 +524,27 @@
   "product_brand": [
     {
       "id": 15,
-      "brand": "State"
+      "brand": "STATE"
     },
     {
       "id": 16,
-      "brand": "Cooper"
+      "brand": "COOPER"
     },
     {
       "id": 17,
-      "brand": "bardot"
+      "brand": "BARDOT"
     },
     {
       "id": 18,
-      "brand": "alfani"
+      "brand": "ALFANI"
     },
     {
       "id": 19,
-      "brand": "cece"
+      "brand": "CECE"
     },
     {
       "id": 20,
-      "brand": "donna ricco"
+      "brand": "DONNA RICCO"
     }
   ]
 }
