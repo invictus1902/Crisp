@@ -1,105 +1,18 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext} from 'react';
 import './shop.scss'
 import ShopBanner from './img_shop/ShopBanner.png'
 import Vector from './img_shop/VectorBannerShop.png'
-import axios from "axios";
 import {Link} from "react-router-dom";
 import {animateScroll} from "react-scroll";
+import {CustomContext} from "../../Context";
 
 const Shop = () => {
-    const [product, setProduct] = useState([])
-    useEffect(() => {
-        axios('http://localhost:3030/product_crisp')
-            .then(({data}) => {
-                setProduct(data)
-            })
-    }, [])
+    const {
+        product,sizeFilter,brandFilter,cheketBrand,cheket,cheketDekete,
+        sizeFilterActive,activeSize,activeSizeDelete,inputr,inputRange,mainInd,ind,handleClick,
+        color,colorActive,colorDap,colorDelete,SetInputr
+    } = useContext(CustomContext)
 
-
-    const [sizeFilter, setSizeFilter] = useState([])
-    useEffect(() => {
-        axios('http://localhost:3030/product_size')
-            .then(({data}) => {
-                setSizeFilter(data)
-            })
-    }, [])
-
-
-    const [brandFilter, setBrandFilter] = useState([])
-    useEffect(() => {
-        axios('http://localhost:3030/product_brand')
-            .then(({data}) => {
-                setBrandFilter(data)
-            })
-    }, [])
-
-    const [cheketBrand, setCheketBrand] = useState([])
-    const cheket = (ber) => {
-        const find = brandFilter.find(el => el.brand === ber)
-        setCheketBrand([...cheketBrand, find.brand])
-    }
-    const cheketDekete = (ber) => {
-        const find = cheketBrand.find(el => el === ber)
-        setCheketBrand(cheketBrand.filter((el) => {
-            if (el !== ber) {
-                return [...cheketBrand, el !== find]
-            }
-        }))
-    }
-
-
-    const [sizeFilterActive, setSizeFilterActive] = useState([])
-    const activeSize = (sez) => {
-        const find = sizeFilter.find(el => el.size_filter === sez)
-        setSizeFilterActive([...sizeFilterActive, find.size_filter])
-    }
-
-    const activeSizeDelete = (sez) => {
-        const find = sizeFilter.find(el => el === sez)
-        setSizeFilterActive(sizeFilterActive.filter((el) => {
-            if (el !== sez) {
-                return [...sizeFilterActive, el !== find]
-            }
-        }))
-    }
-
-
-    const [inputr, SetInputr] = useState(0)
-    let inputRange = (num) => {
-        return num
-    }
-
-    const [mainInd, setMainInd] = useState(0)
-    const [ind, setInd] = useState(0)
-    const handleClick = (mainIndex, index) => {
-        setInd(index)
-        setMainInd(mainIndex)
-    };
-
-
-    const [color, setColor] = useState([])
-    useEffect(() => {
-        axios('http://localhost:3030/product_color')
-            .then(({data}) => {
-                setColor(data)
-            })
-    }, [])
-
-    const [colorActive, setColorActive] = useState([])
-    const colorDap = (col) => {
-        const find = color.find(el => el.color === col)
-        setColorActive([...colorActive, find.color])
-        console.log(colorActive)
-    }
-
-    const colorDelete = (col) => {
-        const find = colorActive.find(el => el === col)
-        setColorActive(colorActive.filter((el) => {
-            if (el !== col) {
-                return [...colorActive, el !== find]
-            }
-        }))
-    }
 
     const toTop = () => {
         animateScroll.scrollToTop({
@@ -259,7 +172,8 @@ const Shop = () => {
                                                 <p className='all_product__one_product__text__category'>{el.category}</p>
                                                 <p className='all_product__one_product__text__title'>{el.title}</p>
                                                 <p className='all_product__one_product__text__price'>{el.price},00
-                                                    EUR</p>
+                                                    EUR
+                                                </p>
                                                 <div className="all_product__one_product__color">
                                                     {el.color.map((item, index) => (
                                                         <div

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './home.scss'
 import Swiper from './swiper/swiper'
 import Chanel from './image_home/chanel.png'
@@ -17,8 +17,20 @@ import Explore from './image_home/explore.png'
 import Cheked_folse from './image_home/Cheked_folse.png'
 import Cheked_true from './image_home/Cheked_true.png'
 import Cart_home from "../../camponens/cart_home";
+import {CustomContext} from "../../Context";
+import {Link} from "react-router-dom";
+import {animateScroll} from "react-scroll";
 
 const Home = () => {
+    const {brandFilter, cheketBrand, cheketDekete, cheket, product} = useContext(CustomContext)
+
+    const toTop = () => {
+        animateScroll.scrollToTop({
+            delay: 0,
+            duration: 0,
+            smooth: true
+        })
+    };
     return (
         <main className='main container'>
             <Swiper/>
@@ -67,46 +79,51 @@ const Home = () => {
 
             <section className='main__shop_some_wear'>
                 <div className="main__shop_some_wear__filter_left">
-                    <div className="main__shop_some_wear__left">
-                        <h2>Shop Some Wear:</h2>
-                        <div className="main__shop_some_wear__filter">
-                            <div className="main__shop_some_wear__button_filter">
-                                <img src={Cheked_folse} alt=""/>
-                                <h3>Best sellers</h3>
-                            </div>
-                            <div className="main__shop_some_wear__button_filter">
-                                <img src={Cheked_folse} alt=""/>
-                                <h3>NEW Arivals</h3>
-                            </div>
-                            <div className="main__shop_some_wear__button_filter">
-                                <img src={Cheked_true} alt=""/>
-                                <h3>TOP women</h3>
-                            </div>
-                            <div className="main__shop_some_wear__button_filter">
-                                <img src={Cheked_folse} alt=""/>
-                                <h3>Collection: Summer</h3>
-                            </div>
-                            <div className="main__shop_some_wear__button_filter">
-                                <img src={Cheked_folse} alt=""/>
-                                <h3>Collection: spring</h3>
-                            </div>
-                            <div className="main__shop_some_wear__button_filter">
-                                <img src={Cheked_folse} alt=""/>
-                                <h3>TREnding</h3>
-                            </div>
+                    <div className="shop__product__left__filter__brand">
+                        <div className="shop__product__left__filter__brand__top">
+                            <h2>Brand</h2>
+                            <div className="shop__product__left__filter__brand__top__line"></div>
+                        </div>
+                        <div className="shop__product__left__filter__brand__bottom">
+                            {brandFilter.map((el) => (
+                                <div
+                                    onClick={cheketBrand.find(item => item === el.brand) ? () => cheketDekete(el.brand) : () => cheket(el.brand)}
+                                    className="shop__product__left__filter__brand__bottom__options">
+                                    <div
+                                        className={`${cheketBrand.find(item => item === el.brand) ? "active_brand_img_true" : "active_brand_img_false"}`}>
+                                    </div>
+                                    <h3>{el.brand}</h3>
+                                </div>
+                            ))}
                         </div>
                     </div>
-                    <div className="main__shop_some_wear__line"></div>
                 </div>
                 <div className="main__shop_some_wear__product">
-                    <Cart_home/>
-                    <Cart_home/>
-                    <Cart_home/>
-                    <Cart_home/>
-                    <Cart_home/>
-                    <Cart_home/>
-                    <Cart_home/>
-                    <Cart_home/>
+                    {product.filter((el,idx)=>{
+                        return idx < 8
+                    })
+                        .filter(el => {
+                            if (cheketBrand.length === 0) {
+                                return true
+                            } else {
+                                return cheketBrand.some(item => el.brand === item)
+                            }
+                        })
+                        .map((el) => (
+                            <div className="all_product__one_product">
+                                <Link onClick={() => toTop()} to={`/single/${el.id}`}>
+                                    <img src={el.img[0]} alt=""/>
+                                </Link>
+                                <div className="all_product__one_product__text">
+                                    <p className='all_product__one_product__text__category'>{el.category}</p>
+                                    <p className='all_product__one_product__text__title'>{el.title}</p>
+                                    <p className='all_product__one_product__text__price'>{el.price},00
+                                        EUR
+                                    </p>
+                                </div>
+                            </div>
+                        ))
+                    }
                     <button>Load more</button>
                 </div>
             </section>

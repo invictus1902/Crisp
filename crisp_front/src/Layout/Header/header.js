@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import './header.scss'
 import Logo from '../../Image/Logo.png'
 import {Link} from "react-router-dom";
@@ -6,6 +6,7 @@ import Search from '../../Image/Search.png'
 import Favorites from '../../Image/Favorites.png'
 import Basket from '../../Image/Basket.png'
 import {useLocation} from "react-router-dom";
+import {CustomContext} from "../../Context";
 
 
 const Header = () => {
@@ -36,7 +37,6 @@ const Header = () => {
             </div>
             <div className="header__nav">
                 <ul>
-                    {/*<li>home <div  className="header__lani active"></div></li>*/}
                     <Link to='/'>home <div  className={`${patch ==='home'?'header__lani active':'header__lani'}`}></div></Link>
                     <Link to='/shop'>Shop <div  className={`${patch ==='shop'?'header__lani active':'header__lani'}`}></div></Link>
                     <li>blog </li>
@@ -63,7 +63,9 @@ const Header = () => {
                 <div className="header__balancePanel">
                     <div className="header__balansLeft">
                         <img src={Favorites} alt=""/>
-                        <img src={Basket} alt=""/>
+                        <Link to={'/dashboard'}>
+                            <img  src={Basket} alt=""/>
+                        </Link>
                     </div>
                     <div className="header__balansRight">
                         <p className='header__rightTop'>Shopping Cart</p>

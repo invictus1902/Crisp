@@ -44,7 +44,6 @@
         font-weight: 400;
         line-height: 16px; /* 127.778% */
       }
-
     }
 
     &__accEdit {
@@ -52,6 +51,97 @@
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
+
+      &__myWishlist{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &__cart {
+          display: flex;
+          &__img{
+            display: flex;
+            flex-direction: column;
+            row-gap: 6px;
+          }
+          img{
+            width: 16px;
+            height: 16px;
+          }
+          &__info{
+            width: 119px;
+            height: 246px;
+
+            img{
+              width: 116px;
+              height: 153px;
+            }
+            &__text{
+              width: 116px;
+              &__name{
+                color: var(--Black, #000);
+                font-family: Oswald,sans-serif;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px; /* 127.778% */
+              }
+              &__price{
+                color: var(--Gray-1, #828282);
+                font-family: Roboto-Flex, sans-serif;
+                font-size: 9px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 13px; /* 142.857% */
+                margin-bottom: 11px;
+              }
+            }
+            &__bottom{
+              display: flex;
+              column-gap: 8px;
+              p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 27px;
+                height: 27px;
+                border: 1px solid var(--Divider, #C4C4C4);
+                background: #FFF;
+              }
+              button{
+                width: 81px;
+                height: 27px;
+                color: #FFF;
+                text-align: center;
+                background: black;
+                font-family: Oswald,sans-serif;
+                font-size: 9px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;              }
+            }
+          }
+        }
+        &__bottom_button{
+          display: flex;
+          column-gap: 20px;
+          button{
+            width: 118px;
+            height: 27px;
+            color: var(--Gray-1, #828282);
+            text-align: center;
+            font-family: Oswald,sans-serif;
+            font-size: 9px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+          }
+        }
+      }
 
       &__accDashboard {
         &__title {

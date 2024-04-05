@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from 'react';
-import {useLocation} from "react-router-dom";
+import React, {useContext, useEffect, useState} from 'react';
+
 import './single.scss'
-import axios from "axios";
 import Facebook from './Facebook.png'
 import Twiter from './Twiter.png'
 import Instagram from './Instagram.png'
@@ -9,23 +8,17 @@ import Confirmed from './Confirmed.png'
 import Save from './save.png'
 import Minus from './minus.png'
 import Plus from './plus.png'
+import {CustomContext} from "../../Context";
+import {useLocation} from "react-router-dom";
+import axios from "axios";
 
 
 const Single = () => {
-    const [accordion1, setAccordion1] = useState(true)
-    const activeAccordion1 = () => {
-        setAccordion1(accordion1 !== true)
-    }
-    const [accordion2, setAccordion2] = useState(false)
-    const activeAccordion2 = () => {
-        setAccordion2(accordion2 !== true)
-    }
-    const [accordion3, setAccordion3] = useState(false)
-    const activeAccordion3 = () => {
-        setAccordion3(accordion3 !== true)
-    }
+    const {
+        activeAccordion1,accordion1,activeAccordion2,accordion2,
+        accordion3,activeAccordion3,addBasket,basket,deleteObject,oneProduct,setOneProduct
+    } = useContext(CustomContext)
 
-    const [oneProduct, setOneProduct] = useState({});
     const id = useLocation().pathname.split('/').at(-1);
     useEffect(() => {
         axios(`http://localhost:3030/product_crisp/${id}`)
@@ -37,30 +30,32 @@ const Single = () => {
             ...prevProduct,
             quantity: prevProduct.quantity < prevProduct.quantity_max ? prevProduct.quantity + 1 : prevProduct.quantity_max
         }))
-    }
+    };
 
     const oneMinus = () => {
         setOneProduct(prevProduct => ({
             ...prevProduct,
             quantity: prevProduct.quantity > 1 ? prevProduct.quantity - 1 : 1
         }))
-    }
-    const [color, setColor] = useState(0)
-    const colorActive = (err) => {
-        setColor(err)
-    }
+    };
+    const [colorSingle, setColorSingle] = useState(0)
+    const colorActiveSingle = (err) => {
+        setColorSingle(err)
+    };
+
+
     return (
         <section className='single container'>
             <div className="single__product">
                 <div className="single__product__img">
                     <div className="single__product__img__all">
                         {oneProduct.img && oneProduct.img.map((image, index) => (
-                            <img src={'../' + image} alt="" onClick={() => colorActive(index)}/>
+                            <img src={'../' + image} alt="" onClick={() => colorActiveSingle(index)}/>
                         ))}
                     </div>
                     <div className="single__product__img__one">
                         {oneProduct.img && oneProduct.img.length > 0 &&
-                        <img src={'../' + oneProduct.img[color]} alt=""/>}
+                        <img src={'../' + oneProduct.img[colorSingle]} alt=""/>}
                         <div className="single__product__img__one__share">
                             <p>Share:</p>
                             <img src={Facebook} alt=""/>
@@ -79,7 +74,7 @@ const Single = () => {
                                 <div
                                     className='all_product__one_product__color__one_color'
                                     style={{background: item}}
-                                    onClick={() => colorActive(index)}
+                                    onClick={() => colorActiveSingle(index)}
                                 >
                                 </div>
                             </div>
@@ -116,8 +111,19 @@ const Single = () => {
                     </div>
                     <div className="single__product__details__button">
                         <button className='single__product__details__button__to_bag'>Add to bag</button>
-                        <button className='single__product__details__button__save'><img src={Save} alt=""/> Save
-                        </button>
+                        {basket.find(item=>item.id === oneProduct.id)
+                            ?
+                            <div>
+                                <button className='single__product__details__button__save' onClick={()=>deleteObject(oneProduct.id)}>удалить из корзины</button>
+                            </div>
+
+                            :
+                            <button
+                                onClick={()=>addBasket(oneProduct)}
+                                className='single__product__details__button__save'><img src={Save} alt=""/> Save
+                            </button>
+                        }
+
                     </div>
                     <div className="single__product__details__info_product">
                         <p><img src={Confirmed} alt=""/> Free shipping</p>
